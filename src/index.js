@@ -2,6 +2,7 @@ import { createHeader, createFooter } from './essentials';
 import { createHome } from './home';
 import { createContact } from './contact';
 import { createMenu } from './menu';
+import './style.css';
 
 const header = createHeader();
 const home = createHome();
@@ -14,7 +15,6 @@ let currPage = "Home";
 const content = document.querySelector('#content');
 content.append(header, home, footer);
 const buttons = document.querySelectorAll('button');
-// console.log(buttons);
 buttons.forEach((element) => {
     element.addEventListener('click', () => {
         if(element.textContent != currPage) {
@@ -32,5 +32,3 @@ buttons.forEach((element) => {
         }
     })
 })
-
-console.log("Testing");

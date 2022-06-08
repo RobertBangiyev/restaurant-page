@@ -1,3 +1,5 @@
+import Github from './img/github.png';
+
 function createHeader() {
     const headerDiv = document.createElement('div');
     headerDiv.classList.add('header');
@@ -31,8 +33,8 @@ function createFooter() {
     copyrightText.textContent = 'Copyright © 2022 Robert Bangiyev';
     footerDiv.appendChild(copyrightText);
     footerDiv.classList.add('footer');
-    const img = document.createElement('img');
-    img.src = './img/github.png';
+    const img = new Image();
+    img.src = Github;
     img.alt = "github logo";
     const link = document.createElement('div');
     const githubLink = document.createElement('a');

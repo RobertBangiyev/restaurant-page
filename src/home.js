@@ -1,3 +1,5 @@
+import Chef from './img/chef.jpg';
+
 function createHome() {
     const bodyDiv = document.createElement('div');
     bodyDiv.classList.add('body');
@@ -6,8 +8,8 @@ function createHome() {
     bodyDiv.appendChild(firstText);
     const chefDiv = document.createElement('div');
     chefDiv.classList.add('chef-image');
-    const img = document.createElement('img');
-    img.src = 'img/chef.jpg';
+    const img = new Image();
+    img.src = Chef;
     img.alt = 'Chef';
     chefDiv.appendChild(img);
     const attestation = document.createElement('p');
